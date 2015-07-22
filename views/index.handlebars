@@ -57,44 +57,40 @@
                 <li class="nav-header"><a href="#links_modal" data-toggle="modal"><i class="glyphicon glyphicon-link"></i>&nbsp;&nbsp;Helpful Links&nbsp;&nbsp;</a></li>
                 <li class="nav-header"><a href="#entry_modal" data-toggle="modal"><i class="glyphicon glyphicon-edit"></i>&nbsp;&nbsp;Order Entry&nbsp;&nbsp;</a></li>    
                 <li class="nav-header"><a href="#rep_modal" data-toggle="modal"><i class="glyphicon glyphicon-star"></i>&nbsp;&nbsp;Rep ID&nbsp;&nbsp;</a></li>     
-                <li class="nav-header"><a href="#service_modal" data-toggle="modal"><i class="glyphicon glyphicon-flag"></i>&nbsp;&nbsp;Serviceability&nbsp;&nbsp;</a></li>    
-                <li class="nav-header"><a href="#cs_modal" data-toggle="modal"><i class="glyphicon glyphicon-headphones"></i>&nbsp;&nbsp;Customer Service Numbers&nbsp;&nbsp;</a></li>        
+                <li class="nav-header"><a href="#service_modal" data-toggle="modal"><i class="glyphicon glyphicon-flag"></i>&nbsp;&nbsp;Channel Manager(s) / Support&nbsp;&nbsp;</a></li>    
+                <li class="nav-header"><a href="#cs_modal" data-toggle="modal"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;Business Customer Service Numbers&nbsp;&nbsp;</a></li>        
+                <li class="nav-header"><a href="#ts_modal" data-toggle="modal"><i class="glyphicon glyphicon-headphones"></i>&nbsp;&nbsp;Business Technical Support Numbers&nbsp;&nbsp;</a></li> 
+                <li class="nav-header"><a href="#rc_modal" data-toggle="modal"><i class="glyphicon glyphicon-file"></i>&nbsp;&nbsp;Rate Cards by Provider</a></li>
             </ul>
             <!-- SCRIPT SHORTCUTS -->
             <ul class="nav nav-stacked">
-                    <h3 class="title nostyle2"  id="starthere"> Script Shortcuts</h3>
+                    <h3 class="title nostyle2"> Script Shortcuts</h3>
 							<div class="one-third">
-                                <strong class="sub"></a>Start Here</strong>
+                                <li>
+                                    <a href="#legend" data-toggle="modal">&nbsp;&nbsp;&nbsp;&nbsp;Legend</a>
+                                </li></br>
+                                <a href="#sh_inbound"><strong class="sub">Start Here (Inbound Calls)</strong></a>
                                 <ul>
-                                    <li>
-                                        <a href="#legend" data-toggle="modal">Legend</a>
-                                    </li>
                                     <li>
                                         <a href="#start">Begin</a>
                                     </li>
-                                   
                                 </ul>
-								<a href="#salesnewservice"><strong class="sub">Sales / New Service</strong></a>
-								<ul>
-									<li>
-										<a href="#collect-info" style="padding-left: 0px;">Collect Information & Serviceability</a>
-									</li>
+								<a href="#salesnewservice"><strong class="sub">Sales / New Service (Inbound Calls)</strong></a>
+                                <ul>
+                                    <li><a href="#sales">Collect Information and Serviceability</a></li>
                                 </ul>
                                 <a href="#closeandconvert"><strong class="sub">Close and Convert</strong></a>
                                 <ul>
 									<li>
-										<a href="#install" style="padding-left: 0px;">Installation Charge</a>
+										<a href="#orderprocess" style="padding-left: 0px;">Order Process</a>
 									</li>
-									<li>
-										<a href="#bill-review" style="padding-left: 0px;">Billing Review</a>
-									</li>
-									<li>
-										<a href="#process-order">Process Order</a>
-									</li>
-									<li>
-										<a href="#final-review" style="padding-left: 0px;">Final Order Review</a>
-									</li>
-								</ul>
+                                </ul></br>
+                                <a href="#sh_outbound"><strong class="sub">Start Here (Outbound Calls)</strong></a>
+                                <ul>
+                                    <li>
+                                        <a href="#outbound_begin" style="padding-left: 0px;">Begin</a>
+                                    </li>
+                                </ul>
 								<a href="#voicemails"><strong class="sub">Voicemails</strong></a>
 								<ul>
 									<li>
@@ -106,9 +102,6 @@
                                     <li>
 										<a href="#web-lead" style="padding-left: 0px;">Web Lead Message</a>
 									</li>
-									<li>
-										<a href="#final-order-review-message" style="padding-left: 0px;">Final Order Review Message</a>
-									</li>
 								</ul>
                                 <a href="#followupmessages"><strong class="sub">Follow Up Messages</strong></a>
 								<ul>
@@ -119,15 +112,6 @@
 										<a href="#web-lead-fu" style="padding-left: 0px;">Web Lead Follow Up</a>
 									</li>
 								</ul>
-                                <a href="#followupprocedures"><strong class="sub">Follow Up Procedures</strong></a>
-								<ul>
-									<li>
-										<a href="#item1-fup"><span class="important">NEEDS ATTN</span></a>
-									</li>
-                                    <li>
-										<a href="#item2-fup"><span class="important">NEEDS ATTN</span></a>
-									</li>
-								</ul>
 								<a href="#salesissues"><strong class="sub">Sales Issues</strong></a>
 								<ul>
 									<li>
@@ -135,9 +119,6 @@
 									</li>
 									<li>
 										<a href="#existing-service">Existing Services</a>
-									</li>
-									<li>
-										<a href="#past-due">Past Due Balance</a>
 									</li>
 								</ul>
 								<a href="#nonsales"><strong class="sub">Non-Sales</strong></a>
@@ -168,62 +149,25 @@
                 <!-- center left-->
                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 scrollit">
                      <div class="panel panel-default">
+                        <a name="sh_inbound"></a>
                         <div class="panel-heading"><h3 class="nostyle"><b>Home [Script]</b></h3></div>
                         <div class="panel-body">
                             <div class="one-third">
-								<h3>Start Here</h3><hr>
+								<h3>Start Here (Inbound Calls)</h3><hr>
                                 <a name="start"></a>
                                 <h4>Begin</h4>
 								<ul class="switch-color icon-color">
 									<li class="icon-school">
-										Thank you for calling, are you looking to add, upgrade, or start new service or do you need billing or technical support?
+										Thank you for calling, are you looking to start new service for your business or do you need Billing or Technical Support?
 									</li>
 									<li class="icon-check2">
 										ACTION: 
 										<ul>
-											<li><a href="#salesnewservice">Sales / New Service</a></li>
+											<li><a href="#salesnewservice">Sales / New Service (Inbound Calls)</a></li>
                                             <li><a href="#tech-support">Technical Support</a></li>
 											<li><a href="#billing-support">Billing Support</a></li>
-                                            <li><a href="#office-information">Office Locations</a></li>
 										</ul>
 									</li>
-									<li class="icon-school">
-										Okay great, I just need to verify that you are serviceable and get promotional pricing in your area. My name is ______ and I will be assiting you today!
-									</li>
-									<li class="icon-school">
-										May I have your first and last name?
-									</li>
-									<li class="icon-school">
-										May I have your address where you would like service?
-									</li>
-									<li class="icon-school">
-										What is a good call back number in case we get disconnected?
-									</li>
-									<li class="icon-school">
-										Please hold one moment while I verify your serviceability.
-									</li>
-									<li class="icon-check2">
-										ACTION: <a href="https://www.google.com/maps" target="_blank">Check Google Maps</a>
-									</li>
-									<li class="icon-check2">
-										ACTION: Click Show Provider in the Salerity Lead to determine the Provider
-									</li>
-                                    <li>PROVIDERS QUICK LINK:</li>
-										<ul>
-                                            <li><a href="/providers#brighthouse" target="_blank">Bright House</a></li>
-                                            <li><a href="/providers#charter" target="_blank">Charter</a></li>
-                                            <li><a href="/providers#cox" target="_blank">Cox</a></li>
-                                            <li><a href="/providers#directv" target="_blank">DIRECTV</a></li>
-                                            <li><a href="/providers#mediacom" target="_blank">Mediacom</a></li>
-                                            <li><a href="/providers#twc" target="_blank">Time Warner</a></li>
-										</ul>
-									<li class="icon-school">
-										Okay, I see here you are in fact serviceable by ________. What services were you looking to get? There is TV, Internet, and Phone.
-									</li>
-									<li class="icon-check2">
-										ACTION: <a href="#sales-new">Collect Information & Serviceability</a>
-									</li>
-								</ul>
 							</div>
                         <div class="panel">
 						<div class="panel-wrapper">
@@ -232,265 +176,142 @@
 									&nbsp;
 								</p>
                                 <a class="section" id="salesnewservice">name</a>
-								<h3>Sales / New Service</h3><hr>
-                                <a name="collect-info"></a>
+								<h3>Sales / New Service (Inbound Calls)</h3><hr>
+                                <a name="collect-info" id="sales"></a>
 								<h4>Collect Information &amp; Serviceability</h4>
 								<ul class="icon-check">
 									<li class="icon-check2">
-										ACTION: Connect to new lead in Salerity
+										ACTION: Connect to new lead in Salerity using Connector-Salerity Lead button
 									</li>
 									<li class="icon-school">
-										Okay great, I just need to verify that you are serviceable and get the promotional pricing in your area. My name is _______ and I will be assisting you today! May I start with your first and last name?
+										Okay great! I need to collect some information from you in order to verify serviceability for location and get promotional pricing in your area. My name is _______ and I will be assisting you today! May I start with your first and last name?
 									</li>
 									<li class="icon-check2">
 										ACTION: Input first and last name in Salerity
 									</li>
-									<li class="icon-school">
-										And (customers first name) What is the address where you would like service?
-									</li>
-									<li class="icon-check2">
-										ACTION: Input FULL address in Salerity including apt # or letter
-									</li>
-									<li class="icon-school">
-										What is a good callback number in case we get disconnected?
-									</li>
-									<li class="icon-check2">
-										ACTION: Verify phone 1 in Salerity and input best contact number in phone 2 if different from phone 1. <span class="important">DO NOT DELETE PHONE 1.</span>
+                                    <li class="icon-school">
+                                        Is (___)___-_____ the best contact number to reach you at?
+                                    </li>
+                                    <li class="icon-check2">
+										ACTION: Verify Phone 1 in Salerity  and input best contact number in Phone 2 if different from Phone 1</br><span class="important">DO NOT DELETE PHONE 1 EVER!</span>
 									</li>
 									<li class="icon-school">
-										Please hold one moment (customers first name) while I verify your address and serviceability…
+										What is the name of your company or business?
 									</li>
 									<li class="icon-check2">
-										ACTION: <a href="https://maps.google.com/" target="_blank" style="display: inline; padding-left: 0px;">Check Google Maps to Verify City and State</a>
+										ACTION: Input Company Name in Salerity
+									</li>
+									<li class="icon-school">
+										What is the address for the location you would like service?
+									</li>
+									<li class="icon-check2">
+										ACTION: Input FULL address in Salerity including Suite # if applies
+									</li>
+									<li class="icon-school">
+										Please hold one moment while I verify your location and serviceability..
+									</li>
+									<li class="icon-check2">
+										ACTION: <a href="https://maps.google.com/" target="_blank" style="display: inline; padding-left: 0px;">Check Google Maps to verify city and state</a>
 									</li>
 									<li class="icon-check2">										
-										ACTION: Click Show Provider in the Salerity Lead to determine the Provider
+                                        ACTION: Check Serviceability using <a href="https://www2.charterbusiness.com/partner/tlr" target="_blank" style="display: inline; padding-left: 0px;">Charter Spectrum Serviceability</a> 
 									</li>
+                                    <span class="option"><b>[IF NOT SERVICEABLE]</b></span>
 									<li class="icon-check2">
-										ACTION: If NOT Serviceable or Serviceability Issue, <a href="#service-issue">CLICK HERE</a>
+										ACTION: Go to Telarus to access DSL, wireless, or Satellite providers
 									</li>								
 									<li class="icon-school">
-										Serviceable: “Okay great! (customers first name) are in fact serviceable by _________. What service were you looking to get? There is TV, Internet, and phone.” 
+										COAX Serviceable: Great, you are serviceable by _____. What service do you want for your business?
 									</li>
 									<li class="icon-check2">
-										ACTION: Add provider to <b>Serviceable By</b> box in Salerity 
+										ACTION: Always use Business Service in Salerity for the field Serviceable By
 									</li>
-                                    <ul><b class="option">[FOR MULTIPLE SERVICE, SAY]</b>
-									<li class="icon-school">
-										Great,  let me tell you a little about each service
-                                    </li></ul>
-								    <ul><b class="option">[FOR SINGLE SERVICE, SAY]</b>
-                                    <li class="icon-school">
-										Great, let me tell you about the packages we offer
-									</li></ul>
+									<li class="icon-check2">
+										ACTION: Go to Telarus and create a New Lead to access pricing and coax alternatives
+                            </li></br>
 									<li class="icon-docs">
-										PROVIDERS QUICK LINK:
-										<ul>
-                                            <li><a href="/providers#brighthouse" target="_blank">Bright House</a></li>
-                                            <li><a href="/providers#charter" target="_blank">Charter</a></li>
-                                            <li><a href="/providers#cox" target="_blank">Cox</a></li>
-                                            <li><a href="/providers#directv" target="_blank">DIRECTV</a></li>
-                                            <li><a href="/providers#mediacom" target="_blank">Mediacom</a></li>
-                                            <li><a href="/providers#twc" target="_blank">Time Warner</a></li>
-										</ul>
+										PROVIDER RATE CARDS QUICK LINKS:
+										       <ul>
+                                               <li><a href="ratecards/ACC Fiber Pricing.pdf" target="_blank">ACC Business Fiber</a></li>                
+                                               <li><a href="ratecards/Brighthouse Pricing 2015.pdf" target="_blank">Bright House Business</a></li>
+                                               <li><a href="ratecards/BSN_Satellite_Pricing_Q1_2015.pdf" target="_blank">BroadSky Network Satellite</a></li>
+                                               <li><a href="ratecards/2015 Spectrum Business Rate Card.pdf" target="_blank">Charter Spectrum Business</a></li>
+                                               <li><a href="ratecards/Spectrum Business ST LOUIS Rate Card.pdf" target="_blank">Charter Spectrum Business St. Louis</a></li>
+                                               <li><a href="ratecards/Comcast Business August 2015 Promotions.pdf" target="_blank">Comcast Business</a></li>
+                                               <li><a href="ratecards/OPTIMUM Pricing Guide 5-1-2015.pdf" target="_blank">Optimum Business</a></li>
+                                               <li><a href="ratecards/TWCBC Q3 ACQ OFFERS(AllRegions).pdf" target="_blank">Time Warner Cable Business Class</a></li>
+                                               </br>For other providers: Please contact Kyra from Telarus for quotes and paperwork
+                                               </ul>
 									</li>
-
 								</ul>
 								<p>
 									&nbsp;
 								</p>
                                 <a class="section" id="closeandconvert">name</a>
 								<h3>Close and Convert</h3><hr>
-								<a name="install"></a>
-								<h4>Installation Charge</h4>
+								<a name="orderprocess" id="orderprocess"></a>
+								<h4>Order Process</h4>
 								<ul class="icon-check">
 									<li class="icon-check2">
-										ACTION: Inform the customer of any installation charge the Portal includes in the order.
+										ACTION: Get the customer’s email address to send them a proposal or Service Agreement
 									</li>
-									<li class="icon-docs">
-										QUICK LINK:
-										<ul>
-											<li>
-												<a href="#tv-sale">Sales</a>
-											</li>
-										</ul>
+                                    <li class="icon-check2">
+										ACTION:Review Service Agreement with the customer such as Monthly Rate, Equipment, One-time Activation Fees, and Installation Fee(s) if applicable. Explain the process to the customer if they would like to move forward with setting up service. 
 									</li>
-								</ul><br>
-								<a name="bill-review"></a>
-								<h4>Billing Review</h4>
-								<ul class="icon-check">
-
-									<li class="icon-school">
-										Ok (customers name) you are all set up for your services. Just to review you ordered ________ with your monthly bill being _______.
-									</li>
-									<li class="icon-check2">
-										ACTION:  Inform the customer of total that was prepaid if applies or total that is due at time of installation for COD. Also inform the customer of any Deposit that may be required
-									</li>
-									<li class="icon-docs">
-										QUICK LINK:
-										<ul>
-											<li>
-												<a href="#tv-sale">Sales</a>
-											</li>
-										</ul>
-									</li>
-								</ul><br>
-								<a name="process-order"></a>
-								<h4>Process Order</h4>
-								<ul class="icon-check">
-
-									<li class="icon-school">
-										Did you want me to go ahead and set you up with an appointment for service ??</li>
-										<ul>
-												<b  class="option">[IF NO]</b>
-												<ul>
-													<li class="icon-school">
-														OK, Let me go ahead and give you our call back number
-													</li>
-													<li class="icon-school">
-														Do you have a pen and paper?
-													</li>
-													<li class="icon-school">
-                                                        Great, our number is (Callback Number). We will make notes in your file so if you need to call back in, anyone here can help you out. I will also make a follow up call with you in a couple of days to see if you have any further questions.</li>
-                                                    <li class="icon-check2">
-														ACTION: Note information in description box in Salerity
-													<br>
-														ACTION: Check action needed
-													<br>
-														ACTION: <span class="important">TASK YOURSELF TO FOLLOW UP THE NEXT DAY</span>
-													</li>
-												</ul>
-											
-												<b class="option">[IF YES]</b>
-												<ul>
-													<li class="icon-check2">
-														ACTION: Go to Salerity Lead
-													</li>
-													<li class="icon-check2">
-														ACTION: Change Lead to SOLD
-													</li>
-													<li class="icon-school">
-														Now I do have to process the order manually. This could take 10 to 15 minutes. I can place you on hold during this time or I can call you back to give you the first available install date &amp; time finalize the order. Would you like to hold or should I give you a call back?</li>
-														<ul>
-                                                        <b class="option">[IF CALLBACK]</b>
-                                                            <ul>
-                                                                <li class="icon-school">
-                                                                    Is the callback number I collected the number you would like to keep on file?
-                                                                </li>
-                                                            </ul>
-                                                         <b class="option">[IF HOLD]</b> 
-                                                            <ul>
-                                                            <li class="icon-school">
-                                                                Ok, let me place you on hold and I will be back shortly</li>
-                                                            <li class="icon-check2">
-                                                                ACTION: Place on Park in Five9
-                                                            </li>
-                                                            <li class="icon-check2">
-                                                                ACTION: Review Services and Add-Ons as you enter them in the Salerity
-                                                            </li>
-                                                            <li class="icon-check2">
-                                                                ACTION: Call Order Entry and Convert Order Manually
-                                                            </li>
-                                                            <li class="icon-check2">
-                                                                ACTION: Note Conversion details in Salerity
-                                                            </li>
-                                                            <li class="icon-check2">
-                                                                ACTION: Take caller off hold or call them back and give callback number
-                                                            </li>
-                                                            <li class="icon-school">
-                                                                I appreciate your patience with me, I have completed the order and the next available date and time is... (INSTALL DATE &amp; TIME). Does that work for you?
-                                                            </li>
-                                                            <li class="icon-check2">
-                                                                ACTION: Confirm date and time with customer and adjust if needed
-                                                            </li>
-                                                            </ul>											
-                                                        </ul>
-									<!-- LI HERE -->
-									<li class="icon-docs">
-										QUICK LINK:
-										<ul>
-											<li>
-												<a href="#tv-sale">Sales</a>
-											</li>
-										</ul>
-									</li>
-								</ul><br>
-                                <a name="final-review"></a>
-								<h4>Final Order Review</h4>
-								<ul class="icon-check">
-
-									<li class="icon-school">
-										Ok ((NAME)) you are all set up. We will be at ((ADDRESS) on ((INSTALL DATE)) to install ((SERVICES)).
-									</li>
-									<li class="icon-school">
-										The technician will give you a pre-call on ((PHONE)) to let you know he is on his way.
-									</li>
-									<li class="icon-school">
-										Please unlock any gates and temporarily lock away any pets.
-									</li>
-                                    
-								    <b class="option">[NO DEPOSIT]</b>
-									<li class="icon-school">
-										I also wanted to let you know that your first month’s bill and any install fees will be due at the time of installation, the exact amount is....</li>
-										<br>
-                                    <b class="option">[DEPOSIT W/ OPTION TO WAIVE]</b>
-                                    	<li class="icon-school">										
-										The total amount due at the time of installation will also include a $50 security deposit. Fortunately, you do have the option to waive the deposit by setting up recurring and pre-payment with our billing department. Would you like their phone number? [GIVE CUSTOMER SERVICE NUMBER]</li>
-										<br>
-		
-										<b class="option">[NO OPTION TO WAIVE]</b>
-										<br>
                                     <li class="icon-school">
-										We will also be requiring a $50.00 security deposit from you as well, you will get this deposit back after 11 months or a check will be sent to your address whenever you cancel.
-									</li>
-									<li class="icon-school">
-										The technician will set everything up and ensure it is working properly so you can begin enjoying your new service.
-									</li>
-									<li class="icon-school">
-										Thank you for your time and thank you for choosing Time Warner, have a  wonderful day!
-									</li>
-									<li class="icon-docs">
-										QUICK LINK:
-										<ul>
-											<li>
-												<a href="#tv-sale">Sales</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
+                                    I will be sending you the Service Agreement to look over and review. If everything looks good you can print the contract, sign and date the appropriate fields and be sure to also include your Federal Tax ID on the page where the field is provided. You can scan and email the signed Service Agreement back or fax it to us at 858-430-3155.
+                                    </li>
+                                    <li class="icon-school">
+                                    Once we get the signed Service Agreement back, we will send your order to the technical support team for your location to have a Site Survey done to make sure no further construction is needed to set up service. This typically takes 48-72 Business days to get the results back. If everything is good to go from the result of the Site Survey your order will then be sent to the Installation Team to contact you and set up a date and time at your convenience.
+                                    </li>
+                                    <li class="icon-check2">
+                                    ACTION: Be sure to set a Task for yourself to follow up with your customer in order to keep them updated on the status of their order and notify them when their installation date will be set for if they have not been notified already. Setting Tasks for Post Installs are very important too to make sure your customers are actually installed. 
+                                    </li>
+								</ul>							
                                 <p>
 									&nbsp;
-								</p>                                                                           
+								</p>  
+            
+                                <a class="section" id="sh_outbound">name</a>
+                                <h3>Start Here (Outbound Calls)</h3><hr>            
+								<a name="outbound_begin"></a>
+                                <h4>Begin</h4>
+                                <span class="option"><b>[PITCH 1]</b></span>
+                                <li class="icon-school">Hello, may I speak to _________?” (name attached to lead or person in charge of Internet & Phone service for the Business)</li>                                
+                                <li class="icon-school">My name is _______, I’m calling in regards to the Business Internet and Phone services.</li>
+                                <li class="icon-check2">ACTION: If lead is interested, click on Connector-Salerity Lead button on Five9 to create a blank form for you to collect leads information.</li></br>
+                                <span class="option"><b>[PITCH 2]</b></span>
+                                <li class="icon-school">Hello, my name _______ and I am calling with Aureus Business, how are you doing today?</li>
+                                <li class="icon-school">The reason for the call today is to see if we can help save you money on your current Internet and Phone bill. My company has access to all the major carriers throughout the US and we are a leading Authorized Retailer for cable, DSL, Satellite, and Fiber providers Nationwide. Do you have a moment to see if we can save you money today?</li>
+                                <li class="icon-check2">ACTION: If lead is interested, click on Connector-Salerity Lead button on Five9 to create a blank form for you to collect leads information.</li></br>
+                                <span class="option"><b>[PITCH 3]</b></span>
+                                <li class="icon-school">Hello, my name is ______ how are you doing today?</li>
+                                <li class="icon-school">The reason for my call today is to reach out to businesses like yours to see if they would like help finding them the most efficient Internet and Phone solutions for your business to run at its very best, or help you save money month to month on your service bills! Do you have a moment to see your options today?</li>
+                                <li class="icon-check2">ACTION: If lead is interested, click on Connector-Salerity Lead button on Five9 to create a blank form for you to collect leads information.</li>
+            
                                 <a class="section" id="voicemails">name</a>
 								<h3>Voicemails</h3><hr>
 								<a name="follow-up-message"></a>
 								<h4>Follow Up Message</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
-										Hello, my name is ______ and I’m calling about [Service Provider]. I wanted to give you a callback to see if you are still interested in service [TV, Internet, Phone]. If you are still interested, feel free to give me a callback anytime; my number is [Our Provider Callback Number]. Thank you and have a great day!<br>
+										Hello, this is ______ calling about the [Service Provider] service for your business. I wanted to give you a callback to see if you are still interested in ________ service. If you are still interested, feel free to give me a callback at your earliest convenience at 855-393-3521. Thank you and have a great day!”<br>
 									</li>
 								</ul><br>
                                 <a name="missed-call"></a>
 								<h4>Missed Call</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
-										Hello, my name is ______ calling about [Service Provider]. I’m following up on a missed call we received from this number. If you are looking to start new service, add or upgrade your current service, feel free to give me a callback; my number is [Our Provider Callback Number]. Thank you and have a great day!<br>
+								        Hello, my name is _______. I’m calling in regards to a missed call we received from your number inquiring about your phone or internet for your business. If you are looking to start new service or add to your existing service, feel free to give us a callback at 855-393-3521. Thank you and have a great day!<br>
 									</li>
                                 </ul><br>
                                 <a name="web-lead"></a>
 								<h4>Web Lead</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
-										Hello my name is _____ calling about [Service Provider]. I’m following up on a web form which was submitted online recently, asking about information for new service. If you are looking to start new service, add or upgrade your current service, feel free to give me a call back; my callback number is [Our Provider Callback Number]. Thank you and have a great day!<br>
+										Hello, my name is _______. I’m calling in regards to the form you submitted online recently asking about information for phone or internet services for your business. If you are looking to start new service or add a new line of service for your business, feel free to give us a callback at 855-393-3521. Thank you and have a great day!<br>
 									</li>									
-								</ul><br>
-								<a name="final-order-review-message"></a>
-								<h4>Final Order Review Message</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-										Hello this is ______ calling about [Service Provider]. I’m sorry we were unable to reach you, but I did finish processing your order and have your installation date and time setup for [Install Date] at [Install Time]. I also wanted to let you know that your first month’s bill will be due at the time of installation; the exact amount is [Customer’s COD - MENTION DEPOSIT INFO IF APPLICABLE]. If you have any questions or if you would like to reschedule, please give us a callback at [Our Provider Callback Number]. Thank you for choosing [Service Provider] and I hope you have a great day!
-									</li>								
-								</ul>                                
+								</ul>                  
 								<p>
 									&nbsp;
 								</p>
@@ -501,51 +322,31 @@
 								<h4>Missed Call Follow Up</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
-										Hello my name is _____ calling about [Service Provider]. I’m following up on a missed call we have received from this number. Were you looking to add, upgrade, or start new service or did you need Billing or Technical Support?
+										Hello, my name is ______ calling in regards to a missed call we received from your number. We provide Internet, Phone, and Television service for over 30 carriers nationwide. Were you looking to add or start new service for your business or did you need billing or technical support?
 									</li>
 									<li class="icon-check2">
-										ACTION: Sales - Create Lead in Salerity if one has not been created already and proceed with New Order
+										ACTION: Sales - Create a lead in Salerity, if one has not been created already, using Connector-Salerity Lead button
 									</li>
 									<li class="icon-check2">
-										ACTION: For Non-Sales, refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
+										ACTION: Non-sales, refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
 									</li>
 								</ul><br>
                                 <a name="web-lead-fu"></a>
 								<h4>Web Lead Follow Up</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
-										Hello my name is _____ calling about [Service Provider]. I’m following up on a web form which was submitted online recently asking about information for new service. Were you looking to add, upgrade, or start new service today?
+										Hello, my name is ______ calling in regards to the form you submitted online recently asking about information for phone or internet services for your business. Were you looking to add or start new service for your business today?
 									</li>
 									<li class="icon-check2">
-										ACTION: Sales - Use Web Lead to proceed with a New Order and go over Services and Pricing depending on what they are looking to get
+										ACTION: Sales - Use Web Lead already created to proceed with a new order. Create new lead in Telarus and proceed to quote
 									</li>
 									<li class="icon-check2">
-										ACTION: For Non-Sales, refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
+										ACTION:Non-sales: Refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
 									</li>
 								</ul>
                                 <p>
 									&nbsp;
-								</p>                                            
-                                <a class="section" id="followupprocedures">name</a>
-                                <h3>Follow Up Procedures</h3>
-                                <hr>                                            
-								    <a name="item1-fup"></a>
-                                    <h4>Item 1</h4>
-                                    <ul class="icon-check">
-                                        <li class="icon-school">
-                                            Needs Attn
-                                        </li>
-								    </ul><br>
-                                    <a name="item2-fup"></a>
-                                    <h4>Item 2</h4>
-                                    <ul class="icon-check">
-                                        <li class="icon-school">
-                                            Needs Attn
-                                        </li>
-								</ul>
-                                 <p>
-									&nbsp;
-								</p>                                            
+								</p>                                                                            
                                 <a class="section" id="salesissues">name</a>
 								<h3>Sales Issues</h3>
                                 <hr>
@@ -554,35 +355,12 @@
 								<ul class="icon-check">
 
 									<li class="icon-school">
-										It seems like my first system is telling me you are not serviceable. I would need to call into my Serviceability Dept to verify the provider in your area. May I place you on hold while I call? This may take 3-5 minutes. May I also have your nearest cross street and house description?
+										I do not show a cable or coax provider available in your area; however, your location is eligible for DSL and Satellite services! I can send you a proposal for different quotes by each provider in your area, what is the best email to send this to?”
 									</li>
 									<li class="icon-check2">
-										ACTION: Remember to ask customer for nearest cross street as well as house description (whether it’s a 1 story or 2 story home, color, Apartment Complex Name, etc).
+										ACTION: Look into Business DSL, Fixed Wireless, or Satellite Service for the customer depending on what they need or want. 
 									</li>
-									<li class="icon-check2">
-										ACTION: Place the customer on hold and call into Order Entry. Make sure the address is correct in Google Maps and call Serviceability.
-									</li>
-									<li class="icon-school">
-										I appreciate your patience; I regret to inform you that your address is not serviceable by __(Service Provider)__
-									</li>
-									<li class="icon-check2">
-										ACTION: Note in Salerity that address is not serviceable and who the provider is if any.
-									</li>
-									<li class="icon-school">
-										You are actually serviceable by __(Service Provider)__ and I can help you with pricing
-									</li>
-									<li class="icon-check2">
-										ACTION: Go to the appropriate Portal and Script to continue with the customer.
-									</li>
-									<li class="icon-school">
-										If you would like I can forward your information to a __(Service Provider)__ specialist, who can contact you with pricing, would that be okay?
-									</li>
-									<li class="icon-check2">
-										ACTION: Forward lead information to appropriate Manager
-									</li>
-									<li class="icon-school">
-										Thank you so much for considering __(Service Provider)__ and I hope you have a great day.
-									</li>
+                                    <div><img src="images/walkthrough.png" style='width:100%;' border="0" alt="Null"></div>
 								</ul><br>
 								<a name="existing-service"></a>
 								<h4>Existing Services</h4>
@@ -592,28 +370,11 @@
 										
 									</li>
 									<li class="icon-school">
-										I appreciate your patience; it seems that this address currently has active service and the previous tenant did not cancel their services. You will need to get ahold of them to do so. Is it possible for you to contact your landlord or previous tenant to have them disconnect service?
+										We only set up new service or can add a new line of service to an existing account. Let me give you the Business Customer Support, who is your provider?
 									</li>
 									<li class="icon-check2">
-										ACTION: <span class="important">Set task to call customer back to complete order.</span>
+										ACTION: Refer lead to provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
 									</li>									
-								</ul><br>
-								<a name="past-due"></a>
-								<h4>Past Due Balance</h4>
-								<ul class="icon-check">
-
-									<li class="icon-school">
-										It seems the information you have provided is associated with a past due balance of.
-									</li>
-									<li class="icon-school">
-										If you would like, I can give you the number to Billing so you can pay off the past due amount. We would not be able to set up new service, until this debt is settled. I can call you back once it is settled to re-submit your order
-									</li>
-									<li class="icon-check2">
-										ACTION: Make notes in Salerity regarding the past due balance
-									</li>
-									<li class="icon-check2">
-                                        ACTION: <span class="important">Set task to call customer back</span>
-									</li>
 								</ul>
 								<p>
 									&nbsp;
@@ -622,33 +383,33 @@
 								<h3>Non-Sales</h3>
                                 <hr>
 								<a name="billing-support"></a>
-								<h4>Billing Support Forward</h4>
+								<h4>Billing Support</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
-										I appreciate your patience, unfortunately you have reached New Sales. If you  have a pen and paper I can provide you the correct number to Billing; let me know when you’re ready.
+										 I’m sorry, you’ve actually reached the New Sales line. Let me get you the right number for billing, who is your provider?
 									</li>
 									<li class="icon-check2">
                                         ACTION: Give the customer the correct <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
 									</li>									
 								</ul><br>
 								<a name="tech-support"></a>
-								<h4>Technical Support Forward</h4>
+								<h4>Technical Support</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
-										“I appreciate your patience; unfortunately you have reached New Sales. If you have a pen and paper I can provide you the correct number to Technical Support; let me know when you’re ready.
+										“I’m sorry, you’ve actually reached the New Sales line. Let me get you the right number for technical support, who is your provider?
 									</li>
 									<li class="icon-check2">
-										ACTION: Give the customer the correct <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
+										ACTION: Give the customer the correct <a href="#ts_modal" data-toggle="modal">Customer Service Number</a>
 									</li>
 								</ul><br>
 								<a name="office-information"></a>
 								<h4>Office Location Information</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
-										I appreciate your patience; let me confirm the closest location to your area. What is your zip code?
+										I’m sorry, we are not a physical location, you’ve reached a call center for New Sales. We do not have the direct lines into locations but I can provide you the customer support line, would you like that?
 									</li>
 									<li class="icon-check2">
-										ACTION: Find the nearest Office Location by Provider by using the "Helpful Links" Button on the left side of this window. 
+										ACTION: Give the customer the number for <a href="#cs_modal" data-toggle="modal">Customer Service</a>
 									</li>
 								</ul>
 							</div>
@@ -724,20 +485,23 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Customer Service Numbers</h4>
+                    <h4 class="modal-title">Business Customer Service Numbers</h4>
                 </div>
                 <div class="modal-body">
                     <ul class="icon-check">                                    	 
-                            <li><a href="tel: 800-288-2020">&nbsp;&nbsp;800-288-2020 - AT&T </a></li>
-                            <li><a href="tel: 888-289-8988">&nbsp;&nbsp;888-289-8988 - Brighthouse</a></li>
-                            <li><a href="tel: 888-438-2427">&nbsp;&nbsp;888-438-2427 - Charter</a></li>
-                            <li><a href="tel: 800-934-6489">&nbsp;&nbsp;800-934-6489 - Comcast</a></li>                        
+                            <li><a href="tel: 888-613-6330">&nbsp;&nbsp;888-613-6330 - AT&T </a></li>
+                            <li><a href="tel: 800-310-2355">&nbsp;&nbsp;800-310-2355 - AT&T Billing</a></li>
+                            <li><a href="tel: 888-289-8988">&nbsp;&nbsp;888-289-8988 - Bright House</a></li>
+                            <li><a href="tel: 800-314-7195">&nbsp;&nbsp;800-314-7195 - Charter Spectrum</a></li>                        
+                            <li><a href="tel: 800-391-3000">&nbsp;&nbsp;800-391-3000 - Comcast</a></li>
                             <li><a href="tel: 855-780-2031">&nbsp;&nbsp;855-780-2031 - Cox</a></li>
                             <li><a href="tel: 800-531-5000">&nbsp;&nbsp;800-531-5000 - DIRECTV</a></li>
-                            <li><a href="tel: 877-462-8188">&nbsp;&nbsp;877-462-8188 - Frontier</a></li>
-                            <li><a href="tel: 866-347-3292">&nbsp;&nbsp;866-347-3292 - Hughesnet</a></li>   
-                            <li><a href="tel: 855-633-4226">&nbsp;&nbsp;855-633-4226 - Mediacom</a></li>
-                            <li><a href="tel: 888-892-2253">&nbsp;&nbsp;888-892-2253 - Time Warner</a></li>  
+                            <li><a href="tel: 877-462-8188">&nbsp;&nbsp;877-462-8188 - Frontier</a></li>   
+                            <li><a href="tel: 866-347-3292">&nbsp;&nbsp;866-347-3292 - HughesNet</a></li>
+                            <li><a href="tel: 855-633-4226">&nbsp;&nbsp;855-633-4226 - Mediacom</a></li>  
+                            <li><a href="tel: 877-892-4519">&nbsp;&nbsp;877-892-4519 - Time Warner</a></li>                         
+                            <li><a href="tel: 866-718-5093">&nbsp;&nbsp;866-718-5093 - Time Warner Billing</a></li>                                     
+                            <li><a href="tel: 800-567-6789">&nbsp;&nbsp;800-567-6789 - Verizon</a></li> 
                     <ul>
                 </div>
                     <div class="modal-footer">
@@ -747,7 +511,36 @@
                 <!-- /.modal-content -->
             </div>
             <!-- /.modal-dalog -->
-    </div>        
+    </div>    
+            
+    <div class="modal" id="ts_modal" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" style="z-index:9999">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Business Technical Support Numbers</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="icon-check">                                    	 
+                            <li><a href="tel: 877-339-5425">&nbsp;&nbsp;877-339-5425 - Bright House</a></li>                        
+                            <li><a href="tel: 800-741-4141">&nbsp;&nbsp;800-741-4141 - Comcast Ethernet</a></li>
+                            <li><a href="tel: 877-761-7401">&nbsp;&nbsp;877-761-7401 - Comcast Voice</a></li>
+                            <li><a href="tel: 877-543-3961">&nbsp;&nbsp;877-543-3961 - Comcast PRI</a></li>   
+                            <li><a href="tel: 877-229-5999">&nbsp;&nbsp;877-229-5999 - Comcast Hospitality</a></li>
+                            <li><a href="tel: 866-272-5111">&nbsp;&nbsp;866-272-5111 - Cox </a></li>
+                            <li><a href="tel: 800-921-8102">&nbsp;&nbsp;800-921-8102 - Frontier</a></li>
+                            <li><a href="tel: 877-718-6716">&nbsp;&nbsp;877-718-6716 - Verizon</a></li>
+                            <li><a href="tel: 866-722-4948">&nbsp;&nbsp;866-722-4948 - Time Warner</a></li>
+                    <ul>
+                </div>
+                    <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dalog -->
+    </div>  
     
     
     <div class="modal" id="cb_modal" style="display: none;" aria-hidden="true">
@@ -758,7 +551,9 @@
                     <h4 class="modal-title">Call Back Number</h4>
                 </div>
                 <div class="modal-body">
-                            <li><a href="tel: 855-393-3521">&nbsp;&nbsp;855-393-3521</a></li>       
+                            <ul>
+                            <li><a href="tel: 855-393-3521">&nbsp;&nbsp;855-393-3521</a></li>  
+                            </ul>
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -776,7 +571,8 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title">Helpful Links</h4>
             </div>
-            <div class="modal-body">                                
+            <div class="modal-body">   
+                    <ul>
                     <b>Resources</b>
                     <li><a href="http://maps.google.com" title="click to open" target="_blank">&nbsp;&nbsp;Google Maps</a></li>
 					<li><a href="https://www2.charterbusiness.com/partner/tlr" title="click to open" target="_blank">&nbsp;&nbsp;Charter Serviceability</a></li>			
@@ -785,8 +581,8 @@
                     <li><a href="http://agent.telarus.com/login.cfm" title="click to open" target="_blank">&nbsp;&nbsp;Telarus</a></li>                   
                     <li><a href="https://caps.cox.com/" title="click to open" target="_blank">&nbsp;&nbsp;CAPS Cox Portal</a></li>		
                     <li><a href="https://business-spectrum.force.com/partners/login" title="click to open" target="_blank">&nbsp;&nbsp;Charter Spectrum</a></li>
-                    <li><a href="https://channelpartners.timewarnercable.com/content/channelpartners/login.html?resource=%2Fcontent%2Fchannelpartners%2Fhome.html&$$login$$=%24%24login%24%24" title="click to open" target="_blank">&nbsp;&nbsp;Time Warner Partner Portral</a></li>   
-                    <hr>
+                    <li><a href="https://channelpartners.timewarnercable.com/content/channelpartners/login.html?resource=%2Fcontent%2Fchannelpartners%2Fhome.html&$$login$$=%24%24login%24%24" title="click to open" target="_blank">&nbsp;&nbsp;Time Warner Partner Portral</a></li>  
+                    </ul>
             </div>
             <div class="modal-footer">
                 <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -805,10 +601,10 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title">Order Entry</h4>
             </div>
-            <div class="modal-body">                                
-                        <li><a href="tel: 866-820-8722" arget="_blank">&nbsp;&nbsp;866-820-8722 - Charter </a></li>    
-                        <li><a href="tel: 855-392-9910" target="_blank">&nbsp;&nbsp;855-392-9910 - Leapfrog</a></li>					
-                        <li><a href="tel: 210-301-0779" target="_blank">&nbsp;&nbsp;210-301-0779 - TPV Charter</a></li>	  
+            <div class="modal-body">      
+                        <ul>
+                        <li><a href="tel: 888-362-4802">&nbsp;&nbsp;888-362-4802 - Charter Spectrum St. Louis</a></li>    
+                        </ul>
             </div>
             <div class="modal-footer">
                 <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -825,11 +621,97 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Serviceability</h4>
+                <h4 class="modal-title">Channel Manager(s) / Support</h4>
             </div>
-            <div class="modal-body">                                
-                        <li><a href="tel: 866-639-6769" target="_blank">&nbsp;&nbsp;866-639-6769 - Charter </a></li>
-                        <li><a href="tel: 855-392-9910" target="_blank">&nbsp;&nbsp;855-392-9910 - Time Warner</a></li>		
+            <div class="modal-body">  
+                
+                
+                        <ul><b>ACC Business</b>
+                        <table class="table table-bordered" style="width:90%"> 
+                              <tr>
+                                <td>Pat Lalley</td>
+                                <td><a href="tel: 866-222-2877">866-222-2877</a></td>
+                                <td><a href="mailto: plalley@att.com">plalley@att.com</a></td>
+                              </tr>                                 
+                        </table>                 
+                        </ul>
+                
+                        <ul><b>Charter Spectrum Business</b>
+                        <table class="table table-bordered" style="width:90%"> 
+                              <tr>
+                                <td>Jan Russell</td>
+                                <td><a href="tel: 310-613-5997">310-613-5997</a></td>
+                                <td><a href="mailto: jan.russell@charter.com">jan.russell@charter.com</a></td>
+                              </tr>                                 
+                        </table>                 
+                        </ul>
+                
+                        <ul><b>Comcast Business</b>
+                        <table class="table table-bordered" style="width:90%"> 
+                              <tr>
+                                <td>Kyra Davis</td>
+                                <td>Submit Paperwork to Kyra <a href="mailto: kdavis@telarus.com">kdavis@telarus.com</a></td>
+                              </tr>                                 
+                        </table>                 
+                        </ul>
+                     
+                        <ul><b>Cox Business (CAPS)</b>
+                         <table class="table table-bordered" style="width:90%"> 
+                              <tr>
+                                <td>Bob Stafford</td>
+                                <td><a href="tel: 619-384-1131">Mobile - 619-384-1131</a></br><a href="tel: 619-269-2462">Office - 619-269-2462</a></td>
+                                <td><a href="mailto: bob.stafford@cox.com">bob.stafford@cox.com</a></td>
+                              </tr>                                 
+                        </table> 
+                        </ul>
+        
+                        <ul><b>Telarus</b>
+                          <table class="table table-bordered" style="width:90%"> 
+                              <tr>
+                                <td>Kyra Davis</td>
+                                <td><a href="tel: 385-695-1175">385-695-1175</a></td>
+                                <td><a href="mailto: kdavis@telarus.com">kdavis@telarus.com</a></td>
+                              </tr>
+                              <tr>
+                                <td>Ciera Broberg</td> 
+                                <td><a href="tel: 801-938-3666">801-938-3666</a></td>
+                                <td><a href="mailto: cbroberg@telarus.com">cbroberg@telarus.com</a></td>
+                              </tr>                                          
+                        </table>
+                        </ul>
+        
+                        <ul><b>Telepacific</b>
+                        <table class="table table-bordered" style="width:90%"> 
+                              <tr>
+                                <td>Randy Greene</td>
+                                <td><a href="tel: 805-657-3029">805-657-3029</a></td>
+                                <td><a href="mailto: rgreene@telepacific.com">rgreene@telepacific.com</a></td>
+                              </tr>                                 
+                        </table>                 
+                        </ul>
+        
+                        <ul><b>Time Warner Business: By Territory</b>
+                        <table class="table table-bordered" style="width:90%"> 
+                              <tr>
+                                <td>Kyra Davis</td>
+                                <td><a href="tel: 385-695-1175">385-695-1175</a></td>
+                                <td>Submit Paperwork to Kyra <a href="mailto: kdavis@telarus.com">kdavis@telarus.com</a></td>
+                              </tr>                                 
+                        </table>                 
+                        </ul>
+        
+                        <ul><b>Vonage</b>
+                        <table class="table table-bordered" style="width:90%"> 
+                              <tr>
+                                <td>Lee Lawson</td>
+                                <td><a href="tel: 619-302-3619">619-302-3619</a></td>
+                                <td><a href="mailto: lee.lawson@vonagebusiness.com">lee.lawson@vonagebusiness.com</a></td>
+                              </tr>                                 
+                        </table>                 
+                        </ul> 
+        
+
+                        	
             </div>
             <div class="modal-footer">
                 <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -847,9 +729,39 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title">Rep ID</h4>
             </div>
+            <div class="modal-body">            
+                <ul>
+                    <li>&nbsp;&nbsp;Service Radius/Aureus Business sub-agent of Telarus</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn">Close</a>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dalog -->
+    </div>  
+            
+    <div class="modal" id="rc_modal" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" style="z-index:9999">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Rate Cards by Provider</h4>
+            </div>
             <div class="modal-body">                                    
-                <li><a href="tel: 866-639-6769" target="_blank">&nbsp;&nbsp;29559 - Charter </a></li>
-                <li><a href="tel: 855-392-9910" target="_blank">&nbsp;&nbsp;22698 - Leapfrog</a></li>		
+                <ul>
+                <li><a href="ratecards/ACC Fiber Pricing.pdf" target="_blank">&nbsp;&nbsp;ACC Business Fiber</a></li>                
+                <li><a href="ratecards/Brighthouse Pricing 2015.pdf" target="_blank">&nbsp;&nbsp;Bright House Business</a></li>
+                <li><a href="ratecards/BSN_Satellite_Pricing_Q1_2015.pdf" target="_blank">&nbsp;&nbsp;BroadSky Network Satellite</a></li>
+                <li><a href="ratecards/2015 Spectrum Business Rate Card.pdf" target="_blank">&nbsp;&nbsp;Charter Spectrum Business</a></li>
+                <li><a href="ratecards/Spectrum Business ST LOUIS Rate Card.pdf" target="_blank">&nbsp;&nbsp;Charter Spectrum Business St. Louis</a></li>
+                <li><a href="ratecards/Comcast Business August 2015 Promotions.pdf" target="_blank">&nbsp;&nbsp;Comcast Business</a></li>
+                <li><a href="ratecards/OPTIMUM Pricing Guide 5-1-2015.pdf" target="_blank">&nbsp;&nbsp;Optimum Business</a></li>
+                <li><a href="ratecards/TWCBC Q3 ACQ OFFERS(AllRegions).pdf" target="_blank">&nbsp;&nbsp;Time Warner Cable Business Class</a></li>
+                </br>&nbsp;&nbsp;For other providers: Please contact Kyra from Telarus for quotes and paperwork
+                </ul>
             </div>
             <div class="modal-footer">
                 <a href="#" data-dismiss="modal" class="btn">Close</a>
