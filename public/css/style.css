@@ -86,6 +86,7 @@ h5{
 
 .swatch {
     border: 10px solid #fff;
+    border-radius: 5px;
     width: 120px;
     height: 120px;
     float: left;
