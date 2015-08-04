@@ -1,785 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>AB Cheat Sheet | HOME</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
-        <link href="css/jquery.qtip.min.css" rel="stylesheet">
-        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-	</head>
-	<body>
-<!-- header -->
-<div id="top-nav" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><img src="images/ab.png"></a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">     
-                <li><a href="/"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="/providers"><i class="glyphicon glyphicon-asterisk"></i>&nbsp;&nbsp;&nbsp;&nbsp;Providers<span class="caret"></span></a>
-                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
-                        <li><a href="/providers#brighthouse"><div class="bh_ico"></div> Bright House</a></li>
-                        <li><a href="/providers#charter"><div class="ch_ico"></div> Charter</a></li>
-                        <li><a href="/providers#cox"><div class="cox_ico"></div> Cox</a></li>
-                        <li><a href="/providers#directv"><div class="dtv_ico"></div> DIRECTV</a></li>
-                        <li><a href="/providers#mediacom"><div class="mc_ico"></div> Mediacom</a></li>
-                        <li><a href="/providers#twc"><div class="twc_ico"></div> Time Warner</a></li>
-                    </ul>
-                </li>
-                <li><a title="Training" data-toggle="modal" href="#training"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;&nbsp;&nbsp;Manuals</a></li>                    
-                <li><a title="Old Cheat Sheet" data-toggle="modal" href="http://salerity.com/manager/cheat-sheet"><span class="glyphicon glyphicon-file"></span>&nbsp;&nbsp;&nbsp;&nbsp;Old Cheat Sheet</a></li>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Alpha Dynamica, Inc. - Style Guide</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" href="#" src="images/ad_logo.png"></img>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav" style="color:white; margin: 10px">
+                <h5>Alpha Dynamica, Inc. Style Guide</h5>
             </ul>
-        </div>
-    </div>
-    <!-- /container -->
-</div>
-<!-- /Header -->
-        
-        <div class="span3 bs-docs-sidebar">
-        <ul class="nav nav-list bs-docs-sidenav affix">
-             <ul class="nav nav-stacked">
-                <li class="nav-header"><a href="#cb_modal" data-toggle="modal"><i class="glyphicon glyphicon-earphone"></i>&nbsp;&nbsp;Call Back Number&nbsp;&nbsp;</a></li>
-                <li class="nav-header"><a href="#links_modal" data-toggle="modal"><i class="glyphicon glyphicon-link"></i>&nbsp;&nbsp;Helpful Links&nbsp;&nbsp;</a></li>
-                <li class="nav-header"><a href="#entry_modal" data-toggle="modal"><i class="glyphicon glyphicon-edit"></i>&nbsp;&nbsp;Order Entry&nbsp;&nbsp;</a></li>    
-                <li class="nav-header"><a href="#rep_modal" data-toggle="modal"><i class="glyphicon glyphicon-star"></i>&nbsp;&nbsp;Rep ID&nbsp;&nbsp;</a></li>     
-                <li class="nav-header"><a href="#service_modal" data-toggle="modal"><i class="glyphicon glyphicon-flag"></i>&nbsp;&nbsp;Channel Manager(s) / Support&nbsp;&nbsp;</a></li>    
-                <li class="nav-header"><a href="#cs_modal" data-toggle="modal"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;Business Customer Service Numbers&nbsp;&nbsp;</a></li>        
-                <li class="nav-header"><a href="#ts_modal" data-toggle="modal"><i class="glyphicon glyphicon-headphones"></i>&nbsp;&nbsp;Business Technical Support Numbers&nbsp;&nbsp;</a></li> 
-                <li class="nav-header"><a href="#rc_modal" data-toggle="modal"><i class="glyphicon glyphicon-file"></i>&nbsp;&nbsp;Rate Cards by Provider</a></li>
-            </ul>
-            <!-- SCRIPT SHORTCUTS -->
-            <ul class="nav nav-stacked">
-                    <h3 class="title nostyle2"> Script Shortcuts</h3>
-							<div class="one-third">
-                                <li>
-                                    <a href="#legend" data-toggle="modal">&nbsp;&nbsp;&nbsp;&nbsp;Legend</a>
-                                </li></br>
-                                <a href="#sh_inbound"><strong class="sub">Start Here (Inbound Calls)</strong></a>
-                                <ul>
-                                    <li>
-                                        <a href="#start">Begin</a>
-                                    </li>
-                                </ul>
-								<a href="#salesnewservice"><strong class="sub">Sales / New Service (Inbound Calls)</strong></a>
-                                <ul>
-                                    <li><a href="#sales">Collect Information and Serviceability</a></li>
-                                </ul>
-                                <a href="#closeandconvert"><strong class="sub">Close and Convert</strong></a>
-                                <ul>
-									<li>
-										<a href="#orderprocess" style="padding-left: 0px;">Order Process</a>
-									</li>
-                                </ul></br>
-                                <a href="#sh_outbound"><strong class="sub">Start Here (Outbound Calls)</strong></a>
-                                <ul>
-                                    <li>
-                                        <a href="#outbound_begin" style="padding-left: 0px;">Begin</a>
-                                    </li>
-                                </ul>
-								<a href="#voicemails"><strong class="sub">Voicemails</strong></a>
-								<ul>
-									<li>
-										<a href="#follow-up-message" style="padding-left: 0px;">Follow Up Message</a>
-									</li>
-                                    <li>
-										<a href="#missed-call" style="padding-left: 0px;">Missed Call Message</a>
-									</li>
-                                    <li>
-										<a href="#web-lead" style="padding-left: 0px;">Web Lead Message</a>
-									</li>
-								</ul>
-                                <a href="#followupmessages"><strong class="sub">Follow Up Messages</strong></a>
-								<ul>
-									<li>
-										<a href="#missed-call-fu" style="padding-left: 0px;">Missed Call Follow Up</a>
-									</li>
-                                    <li>
-										<a href="#web-lead-fu" style="padding-left: 0px;">Web Lead Follow Up</a>
-									</li>
-								</ul>
-								<a href="#salesissues"><strong class="sub">Sales Issues</strong></a>
-								<ul>
-									<li>
-										<a href="#service-issue" id="link-service-issue">Serviceability Issues</a>
-									</li>
-									<li>
-										<a href="#existing-service">Existing Services</a>
-									</li>
-								</ul>
-								<a href="#nonsales"><strong class="sub">Non-Sales</strong></a>
-								<ul>
-									<li>
-										<a href="#billing-support">Billing Support</a>
-									</li>
-									<li>
-										<a href="#tech-support">Technical Support</a>
-									</li>
-									<li>
-										<a href="#office-information">Office Locations</a>
-									</li>
-								</ul>
-							</div>           
-            </ul>
-        </ul>
-      </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="#logo_types"><i class="fa fa-fw fa-dashboard"></i><h5>Logo Types</h5></a>
+                    </li>
+                    <li>
+                        <a href="#color_details"><i class="fa fa-fw fa-table"></i><h5>Color Details</h5></a>
+                    </li>
+                    <li>
+                        <a href="#typefaces"><i class="fa fa-fw fa-edit"></i><h5>Typefaces</h5></a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
 
-<!-- Main -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 fixed">
-        </div>
-        <!-- /col-3 -->
-        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 scrollit">
-            <div class="row">
-                <!-- center left-->
-                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 scrollit">
-                     <div class="panel panel-default">
-                        <a name="sh_inbound"></a>
-                        <div class="panel-heading"><h3 class="nostyle"><b>Home [Script]</b></h3></div>
-                        <div class="panel-body">
-                            <div class="one-third">
-								<h3>Start Here (Inbound Calls)</h3><hr>
-                                <a name="start"></a>
-                                <h4>Begin</h4>
-								<ul class="switch-color icon-color">
-									<li class="icon-school">
-										Thank you for calling, are you looking to start new service for your business or do you need Billing or Technical Support?
-									</li>
-									<li class="icon-check2">
-										ACTION: 
-										<ul>
-											<li><a href="#salesnewservice">Sales / New Service (Inbound Calls)</a></li>
-                                            <li><a href="#tech-support">Technical Support</a></li>
-											<li><a href="#billing-support">Billing Support</a></li>
-										</ul>
-									</li>
-							</div>
-                        <div class="panel">
-						<div class="panel-wrapper">
-							<div class="one-full">			
-                                <p>
-									&nbsp;
-								</p>
-                                <a class="section" id="salesnewservice">name</a>
-								<h3>Sales / New Service (Inbound Calls)</h3><hr>
-                                <a name="collect-info" id="sales"></a>
-								<h4>Collect Information &amp; Serviceability</h4>
-								<ul class="icon-check">
-									<li class="icon-check2">
-										ACTION: Connect to new lead in Salerity using Connector-Salerity Lead button
-									</li>
-									<li class="icon-school">
-										Okay great! I need to collect some information from you in order to verify serviceability for location and get promotional pricing in your area. My name is _______ and I will be assisting you today! May I start with your first and last name?
-									</li>
-									<li class="icon-check2">
-										ACTION: Input first and last name in Salerity
-									</li>
-                                    <li class="icon-school">
-                                        Is (___)___-_____ the best contact number to reach you at?
-                                    </li>
-                                    <li class="icon-check2">
-										ACTION: Verify Phone 1 in Salerity  and input best contact number in Phone 2 if different from Phone 1</br><span class="important">DO NOT DELETE PHONE 1 EVER!</span>
-									</li>
-									<li class="icon-school">
-										What is the name of your company or business?
-									</li>
-									<li class="icon-check2">
-										ACTION: Input Company Name in Salerity
-									</li>
-									<li class="icon-school">
-										What is the address for the location you would like service?
-									</li>
-									<li class="icon-check2">
-										ACTION: Input FULL address in Salerity including Suite # if applies
-									</li>
-									<li class="icon-school">
-										Please hold one moment while I verify your location and serviceability..
-									</li>
-									<li class="icon-check2">
-										ACTION: <a href="https://maps.google.com/" target="_blank" style="display: inline; padding-left: 0px;">Check Google Maps to verify city and state</a>
-									</li>
-									<li class="icon-check2">										
-                                        ACTION: Check Serviceability using <a href="https://www2.charterbusiness.com/partner/tlr" target="_blank" style="display: inline; padding-left: 0px;">Charter Spectrum Serviceability</a> 
-									</li>
-                                    <span class="option"><b>[IF NOT SERVICEABLE]</b></span>
-									<li class="icon-check2">
-										ACTION: Go to Telarus to access DSL, wireless, or Satellite providers
-									</li>								
-									<li class="icon-school">
-										COAX Serviceable: Great, you are serviceable by _____. What service do you want for your business?
-									</li>
-									<li class="icon-check2">
-										ACTION: Always use Business Service in Salerity for the field Serviceable By
-									</li>
-									<li class="icon-check2">
-										ACTION: Go to Telarus and create a New Lead to access pricing and coax alternatives
-                            </li></br>
-									<li class="icon-docs">
-										PROVIDER RATE CARDS QUICK LINKS:
-										       <ul>
-                                               <li><a href="ratecards/ACC Fiber Pricing.pdf" target="_blank">ACC Business Fiber</a></li>                
-                                               <li><a href="ratecards/Brighthouse Pricing 2015.pdf" target="_blank">Bright House Business</a></li>
-                                               <li><a href="ratecards/BSN_Satellite_Pricing_Q1_2015.pdf" target="_blank">BroadSky Network Satellite</a></li>
-                                               <li><a href="ratecards/2015 Spectrum Business Rate Card.pdf" target="_blank">Charter Spectrum Business</a></li>
-                                               <li><a href="ratecards/Spectrum Business ST LOUIS Rate Card.pdf" target="_blank">Charter Spectrum Business St. Louis</a></li>
-                                               <li><a href="ratecards/Comcast Business August 2015 Promotions.pdf" target="_blank">Comcast Business</a></li>
-                                               <li><a href="ratecards/OPTIMUM Pricing Guide 5-1-2015.pdf" target="_blank">Optimum Business</a></li>
-                                               <li><a href="ratecards/TWCBC Q3 ACQ OFFERS(AllRegions).pdf" target="_blank">Time Warner Cable Business Class</a></li>
-                                               </br>For other providers: Please contact Kyra from Telarus for quotes and paperwork
-                                               </ul>
-									</li>
-								</ul>
-								<p>
-									&nbsp;
-								</p>
-                                <a class="section" id="closeandconvert">name</a>
-								<h3>Close and Convert</h3><hr>
-								<a name="orderprocess" id="orderprocess"></a>
-								<h4>Order Process</h4>
-								<ul class="icon-check">
-									<li class="icon-check2">
-										ACTION: Get the customer’s email address to send them a proposal or Service Agreement
-									</li>
-                                    <li class="icon-check2">
-										ACTION:Review Service Agreement with the customer such as Monthly Rate, Equipment, One-time Activation Fees, and Installation Fee(s) if applicable. Explain the process to the customer if they would like to move forward with setting up service. 
-									</li>
-                                    <li class="icon-school">
-                                    I will be sending you the Service Agreement to look over and review. If everything looks good you can print the contract, sign and date the appropriate fields and be sure to also include your Federal Tax ID on the page where the field is provided. You can scan and email the signed Service Agreement back or fax it to us at 858-430-3155.
-                                    </li>
-                                    <li class="icon-school">
-                                    Once we get the signed Service Agreement back, we will send your order to the technical support team for your location to have a Site Survey done to make sure no further construction is needed to set up service. This typically takes 48-72 Business days to get the results back. If everything is good to go from the result of the Site Survey your order will then be sent to the Installation Team to contact you and set up a date and time at your convenience.
-                                    </li>
-                                    <li class="icon-check2">
-                                    ACTION: Be sure to set a Task for yourself to follow up with your customer in order to keep them updated on the status of their order and notify them when their installation date will be set for if they have not been notified already. Setting Tasks for Post Installs are very important too to make sure your customers are actually installed. 
-                                    </li>
-								</ul>							
-                                <p>
-									&nbsp;
-								</p>  
-            
-                                <a class="section" id="sh_outbound">name</a>
-                                <h3>Start Here (Outbound Calls)</h3><hr>            
-								<a name="outbound_begin"></a>
-                                <h4>Begin</h4>
-                                <span class="option"><b>[PITCH 1]</b></span>
-                                <li class="icon-school">Hello, may I speak to _________?” (name attached to lead or person in charge of Internet & Phone service for the Business)</li>                                
-                                <li class="icon-school">My name is _______, I’m calling in regards to the Business Internet and Phone services.</li>
-                                <li class="icon-check2">ACTION: If lead is interested, click on Connector-Salerity Lead button on Five9 to create a blank form for you to collect leads information.</li></br>
-                                <span class="option"><b>[PITCH 2]</b></span>
-                                <li class="icon-school">Hello, my name _______ and I am calling with Aureus Business, how are you doing today?</li>
-                                <li class="icon-school">The reason for the call today is to see if we can help save you money on your current Internet and Phone bill. My company has access to all the major carriers throughout the US and we are a leading Authorized Retailer for cable, DSL, Satellite, and Fiber providers Nationwide. Do you have a moment to see if we can save you money today?</li>
-                                <li class="icon-check2">ACTION: If lead is interested, click on Connector-Salerity Lead button on Five9 to create a blank form for you to collect leads information.</li></br>
-                                <span class="option"><b>[PITCH 3]</b></span>
-                                <li class="icon-school">Hello, my name is ______ how are you doing today?</li>
-                                <li class="icon-school">The reason for my call today is to reach out to businesses like yours to see if they would like help finding them the most efficient Internet and Phone solutions for your business to run at its very best, or help you save money month to month on your service bills! Do you have a moment to see your options today?</li>
-                                <li class="icon-check2">ACTION: If lead is interested, click on Connector-Salerity Lead button on Five9 to create a blank form for you to collect leads information.</li>
-            
-                                <a class="section" id="voicemails">name</a>
-								<h3>Voicemails</h3><hr>
-								<a name="follow-up-message"></a>
-								<h4>Follow Up Message</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-										Hello, this is ______ calling about the [Service Provider] service for your business. I wanted to give you a callback to see if you are still interested in ________ service. If you are still interested, feel free to give me a callback at your earliest convenience at 855-393-3521. Thank you and have a great day!”<br>
-									</li>
-								</ul><br>
-                                <a name="missed-call"></a>
-								<h4>Missed Call</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-								        Hello, my name is _______. I’m calling in regards to a missed call we received from your number inquiring about your phone or internet for your business. If you are looking to start new service or add to your existing service, feel free to give us a callback at 855-393-3521. Thank you and have a great day!<br>
-									</li>
-                                </ul><br>
-                                <a name="web-lead"></a>
-								<h4>Web Lead</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-										Hello, my name is _______. I’m calling in regards to the form you submitted online recently asking about information for phone or internet services for your business. If you are looking to start new service or add a new line of service for your business, feel free to give us a callback at 855-393-3521. Thank you and have a great day!<br>
-									</li>									
-								</ul>                  
-								<p>
-									&nbsp;
-								</p>
-                                <a class="section" id="followupmessages">name</a>
-								<h3>Follow Up Messages</h3>
-                                <hr>
-								<a name="missed-call-fu"></a>
-								<h4>Missed Call Follow Up</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-										Hello, my name is ______ calling in regards to a missed call we received from your number. We provide Internet, Phone, and Television service for over 30 carriers nationwide. Were you looking to add or start new service for your business or did you need billing or technical support?
-									</li>
-									<li class="icon-check2">
-										ACTION: Sales - Create a lead in Salerity, if one has not been created already, using Connector-Salerity Lead button
-									</li>
-									<li class="icon-check2">
-										ACTION: Non-sales, refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
-									</li>
-								</ul><br>
-                                <a name="web-lead-fu"></a>
-								<h4>Web Lead Follow Up</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-										Hello, my name is ______ calling in regards to the form you submitted online recently asking about information for phone or internet services for your business. Were you looking to add or start new service for your business today?
-									</li>
-									<li class="icon-check2">
-										ACTION: Sales - Use Web Lead already created to proceed with a new order. Create new lead in Telarus and proceed to quote
-									</li>
-									<li class="icon-check2">
-										ACTION:Non-sales: Refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
-									</li>
-								</ul>
-                                <p>
-									&nbsp;
-								</p>                                                                            
-                                <a class="section" id="salesissues">name</a>
-								<h3>Sales Issues</h3>
-                                <hr>
-								<a name="service-issue"></a>
-								<h4>Serviceability Issues</h4>
-								<ul class="icon-check">
-
-									<li class="icon-school">
-										I do not show a cable or coax provider available in your area; however, your location is eligible for DSL and Satellite services! I can send you a proposal for different quotes by each provider in your area, what is the best email to send this to?”
-									</li>
-									<li class="icon-check2">
-										ACTION: Look into Business DSL, Fixed Wireless, or Satellite Service for the customer depending on what they need or want. 
-									</li>
-                                    <div><img src="images/walkthrough.PNG" style='width:100%;' border="0"></div>
-								</ul><br>
-								<a name="existing-service"></a>
-								<h4>Existing Services</h4>
-								<ul class="icon-check">
-
-									<li class="icon-school">
-										
-									</li>
-									<li class="icon-school">
-										We only set up new service or can add a new line of service to an existing account. Let me give you the Business Customer Support, who is your provider?
-									</li>
-									<li class="icon-check2">
-										ACTION: Refer lead to provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
-									</li>									
-								</ul>
-								<p>
-									&nbsp;
-								</p>                                            
-                                <a class="section" id="nonsales">name</a>
-								<h3>Non-Sales</h3>
-                                <hr>
-								<a name="billing-support"></a>
-								<h4>Billing Support</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-										 I’m sorry, you’ve actually reached the New Sales line. Let me get you the right number for billing, who is your provider?
-									</li>
-									<li class="icon-check2">
-                                        ACTION: Give the customer the correct <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
-									</li>									
-								</ul><br>
-								<a name="tech-support"></a>
-								<h4>Technical Support</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-										“I’m sorry, you’ve actually reached the New Sales line. Let me get you the right number for technical support, who is your provider?
-									</li>
-									<li class="icon-check2">
-										ACTION: Give the customer the correct <a href="#ts_modal" data-toggle="modal">Customer Service Number</a>
-									</li>
-								</ul><br>
-								<a name="office-information"></a>
-								<h4>Office Location Information</h4>
-								<ul class="icon-check">
-									<li class="icon-school">
-										I’m sorry, we are not a physical location, you’ve reached a call center for New Sales. We do not have the direct lines into locations but I can provide you the customer support line, would you like that?
-									</li>
-									<li class="icon-check2">
-										ACTION: Give the customer the number for <a href="#cs_modal" data-toggle="modal">Customer Service</a>
-									</li>
-								</ul>
-							</div>
-							<!-- end div .one-half -->
-
-							<div class="whitespace"></div>
-						</div>
-					</div>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw" id="logo_types"></i> Logo Types</h3>
+                            </div>
+                            <div class="panel-body">
+                               <div class="col-md-12 col-centered">
+                                   <h3 class="subhead">Guidelines</h3> 
+                                                      The cornerstone of the Alpha Dynamica, Inc. visual identity is the logo. Our logo comes in four approved versions as pictured below. 
+                                                      Please familiarize yourself with these logos and apply them accordingly in your correspondences.
+                                   </br></br>
+                                   <h3 class="subhead">Do NOT</h3>
+                                    • alter our logos in any way</br>
+                                    • place a logo in such close proximity to other content that it is indistinguishable</br>
+                                    • make our logo the most distinctive or prominent feature on your website, printed material or other content</br>                                 
+                                    • use our logos in a way that is harmful, deceptive, obscene or otherwise objectionable to the average person</br>
+                                    • use our logos on websites or other places containing content associated with hate speech, pornography, gambling or illegal activities</br>
+                                    • use our logos to, or in connection with, content that disparages us or sullies our reputation</br>
+                               </div>
+                               <div class="col-md-6 centered">
+                                   <div class="col-md-12 col-centered">
+                                        <div style="text-align:center">
+                                           <img class="thumb" src="images/ad_vertical_lockup.png">
+                                           <h4>Primary - Vertical Lockup</h4>                                                                              
+                                           <div class="col-md-4 col-centered"></div>
+                                           <div class="col-md-4 col-centered">The above is the primary version of the Alpha Dynamica, Inc. logo. This logo
+                                                                              should be used whenever possible.
+                                           </div>
+                                           <div class="col-md-4 col-centered"></div>
+                                        </div>
+                                    </div>   
+                                </div>
+                               <div class="col-md-6 centered">
+                                   <div class="col-md-12 col-centered">
+                                        <div style="text-align:center">
+                                           <img class="thumb_alt" src="images/ad_vertical_inverse.png">
+                                           <h4>Vertical Lockup Inverse</h4>
+                                           <div class="col-md-4 col-centered"></div>
+                                           <div class="col-md-4 col-centered">The above is the alternate version of the vertical lockup. It is intended to be used 
+                                                                              when the logo needs to be placed against a light-colored or white background.
+                                           </div>
+                                           <div class="col-md-4 col-centered"></div>
+                                        </div>
+                                    </div>                                        
+                                </div>
+                               <div class="col-md-6 centered"> 
+                                   <div class="col-md-12 col-centered">
+                                        <div style="text-align:center">
+                                           <img class="thumb" src="images/ad_logo_thumb.png">
+                                           <h4>Horizontal Lockup</h4>
+                                           <div class="col-md-4 col-centered"></div>
+                                           <div class="col-md-4 col-centered">The above is the horizontal lockup version of the logo. It is intended to be used 
+                                                                              when the logo needs to be placed against a light-colored or white background.
+                                           </div>
+                                           <div class="col-md-4 col-centered"></div>
+                                        </div>
+                                    </div>  
+                               </div>
+                               <div class="col-md-6 centered">
+                                      <div class="col-md-12 col-centered">
+                                        <div style="text-align:center">
+                                           <img class="thumb" src="images/ad_symbol.png">
+                                           <h4>Symbol</h4>
+                                           <div class="col-md-4 col-centered"></div>
+                                           <div class="col-md-4 col-centered">The symbol version of the logo may be used when a cleaner aesthetic is required, or if
+                                                                              the text portion of the logo becomes illegible upon primary logo resize.
+                                           </div>
+                                           <div class="col-md-4 col-centered"></div>
+                                        </div>
+                                    </div>  
+                            </div>
                         </div>
                     </div>
-                    <hr>                    
-    </div>
-</div>
-<!-- /Main -->
-
-
-
-    <div class="modal" id="training" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog" style="z-index:9999">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Manuals</h4>
                 </div>
-                <div class="modal-body">
-                    <a href="http://salerity.com/manager/private/sales-script/guides/Charter_Portal_12-17-13.pdf" target="_blank">Charter Portal</a><br>  
-                    <a href="http://salerity.com/manager/private/sales-script/guides/leapfrog_guide.pdf" target="_blank">Leapfrog Time Warner Guide</a><br>
-                    <a href="http://salerity.com/manager/private/sales-script/guides/ACCSTrainingManual.pdf" target="_blank">ACCS Training Manual</a>
                 </div>
-                <div class="modal-footer">
-                    <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dalog -->
-    </div>
-        
-    <div class="modal" id="legend" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog" style="z-index:9999">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Legend</h4>
-                </div>
-                <div class="modal-body">
-                    <ul class="icon-check">
-                                            <li class="icon-school">
-                                            This is your script and lines you<br> repeat to the customer
-                                        </li><br>
-                                        <li class="icon-check2">
-                                            ACTION: Reminders of operations<br> and actions.
-                                        </li><br>
-                                        <li class="icon-docs">
-                                            QUICK LINK: <a>These are shortcuts</a>
-                                        </li>
-                                    </ul>           
-                </div>
-                <div class="modal-footer">
-                    <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dalog -->
-    </div>
+                <!-- /.row -->
                 
-    <div class="modal" id="cs_modal" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog" style="z-index:9999">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Business Customer Service Numbers</h4>
-                </div>
-                <div class="modal-body">
-                    <ul class="icon-check">                                    	 
-                            <li><a href="tel: 888-613-6330">&nbsp;&nbsp;888-613-6330 - AT&T </a></li>
-                            <li><a href="tel: 800-310-2355">&nbsp;&nbsp;800-310-2355 - AT&T Billing</a></li>
-                            <li><a href="tel: 888-289-8988">&nbsp;&nbsp;888-289-8988 - Bright House</a></li>
-                            <li><a href="tel: 800-314-7195">&nbsp;&nbsp;800-314-7195 - Charter Spectrum</a></li>                        
-                            <li><a href="tel: 800-391-3000">&nbsp;&nbsp;800-391-3000 - Comcast</a></li>
-                            <li><a href="tel: 855-780-2031">&nbsp;&nbsp;855-780-2031 - Cox</a></li>
-                            <li><a href="tel: 800-531-5000">&nbsp;&nbsp;800-531-5000 - DIRECTV</a></li>
-                            <li><a href="tel: 877-462-8188">&nbsp;&nbsp;877-462-8188 - Frontier</a></li>   
-                            <li><a href="tel: 866-347-3292">&nbsp;&nbsp;866-347-3292 - HughesNet</a></li>
-                            <li><a href="tel: 855-633-4226">&nbsp;&nbsp;855-633-4226 - Mediacom</a></li>  
-                            <li><a href="tel: 877-892-4519">&nbsp;&nbsp;877-892-4519 - Time Warner</a></li>                         
-                            <li><a href="tel: 866-718-5093">&nbsp;&nbsp;866-718-5093 - Time Warner Billing</a></li>                                     
-                            <li><a href="tel: 800-567-6789">&nbsp;&nbsp;800-567-6789 - Verizon</a></li> 
-                    <ul>
-                </div>
-                    <div class="modal-footer">
-                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw" id="color_details"></i> Color Details</h3>
+                            </div>
+                            <div class="panel-body">
+                               <div class="col-md-12 col-centered">
+                                   <div class="col-md-3 col-centered">
+                                       <div class="swatch" id="colorA">
+                                       </div>                                       
+                                           <div class="col-md-4 col-centered"></div>
+                                       <div class="col-md-4 col-centered">Pantone:</br>
+                                                                              485 C
+                                                                              </br></br>
+                                                                              CMYK:</br>
+                                                                              0, 99, 97, 0
+                                                                              </br></br>
+                                                                              RGB:</br>
+                                                                              238, 29, 37
+                                                                              </br></br>
+                                                                              Web:</br>
+                                                                              #EE1F25
+    
+                                                                              
+                                           </div>
+                                           <div class="col-md-4 col-centered"></div>
+                                    </div>                                
+                                   <div class="col-md-3 col-centered">
+                                       <div class="swatch" id="colorB"></div>
+                                           <div class="col-md-4 col-centered"></div>
+                                           <div class="col-md-4 col-centered">Pantone:</br>
+                                                                              1805 C
+                                                                              </br></br>
+                                                                              CMYK:</br>
+                                                                              23, 100, 100, 17
+                                                                              </br></br>
+                                                                              RGB:</br>
+                                                                              167, 29, 33
+                                                                              </br></br>
+                                                                              Web:</br>
+                                                                              #A71D21
+                                           </div>
+                                           <div class="col-md-4 col-centered"></div>
+                                   </div>                                
+                                   <div class="col-md-3 col-centered">
+                                       <div class="swatch" id="colorC"></div>
+                                           <div class="col-md-4 col-centered"></div>
+                                           <div class="col-md-4 col-centered"></div>
+                                           <div class="col-md-4 col-centered">Pantone:</br>
+                                                                              Pure Black
+                                                                              </br></br>                                        
+                                                                              CMYK:</br>
+                                                                              75, 68, 67, 90
+                                                                              </br></br>
+                                                                              RGB:</br>
+                                                                              00, 00, 00
+                                                                              </br></br>
+                                                                              Web:</br>
+                                                                              #000000
+                                           </div>
+                                           <div class="col-md-4 col-centered"></div>
+                                   </div>                                
+                                   <div class="col-md-3 col-centered">                                        
+                                        <div class="swatch" id="colorD"></div>
+                                           <div class="col-md-4 col-centered"></div>
+                                           <div class="col-md-4 col-centered">Pantone:</br>
+                                                                              Pure White
+                                                                              </br></br>
+                                                                              CMYK:</br>
+                                                                              75, 68, 67, 90
+                                                                              </br></br>
+                                                                              RGB:</br>
+                                                                              255, 255, 255
+                                                                              </br></br>
+                                                                              Web:</br>
+                                                                              #FFFFFF    
+                                           </div>
+                                           <div class="col-md-4 col-centered"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dalog -->
-    </div>    
-            
-    <div class="modal" id="ts_modal" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog" style="z-index:9999">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Business Technical Support Numbers</h4>
-                </div>
-                <div class="modal-body">
-                    <ul class="icon-check">                                    	 
-                            <li><a href="tel: 877-339-5425">&nbsp;&nbsp;877-339-5425 - Bright House</a></li>                        
-                            <li><a href="tel: 800-741-4141">&nbsp;&nbsp;800-741-4141 - Comcast Ethernet</a></li>
-                            <li><a href="tel: 877-761-7401">&nbsp;&nbsp;877-761-7401 - Comcast Voice</a></li>
-                            <li><a href="tel: 877-543-3961">&nbsp;&nbsp;877-543-3961 - Comcast PRI</a></li>   
-                            <li><a href="tel: 877-229-5999">&nbsp;&nbsp;877-229-5999 - Comcast Hospitality</a></li>
-                            <li><a href="tel: 866-272-5111">&nbsp;&nbsp;866-272-5111 - Cox </a></li>
-                            <li><a href="tel: 800-921-8102">&nbsp;&nbsp;800-921-8102 - Frontier</a></li>
-                            <li><a href="tel: 877-718-6716">&nbsp;&nbsp;877-718-6716 - Verizon</a></li>
-                            <li><a href="tel: 866-722-4948">&nbsp;&nbsp;866-722-4948 - Time Warner</a></li>
-                    <ul>
-                </div>
-                    <div class="modal-footer">
-                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                <!-- /.row -->
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw" id="typefaces"></i> Typefaces</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-md-6 col-centered">
+                                   <h3 class="subhead">Copperplate Gothic Regular</h3> 
+                                                      This is the primary font that is reserved for headlines and callouts.
+                                   </br></br>                                  
+                               </div>
+                               <div class="col-md-6">
+                                   <div class="subhead"><h3>Copperplate Gothic Reg.</h3></br>
+                                     ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
+                                     abcdefghijklmnopqrstuvwxyz</br>
+                                     0123456789 (.,;:’”$#@!&*) 
+                                   </div>
+                               </div>
+                               <div class="col-md-6 col-centered"><hr>
+                                   <h3 class="subhead_alt">Roboto</h3> 
+                                                      Use for body copy on the Web and in print.
+                                   </br></br>                                  
+                               </div>
+                               <div class="col-md-6"><hr>
+                                   <div class="subhead_alt"><h3 class="subhead_alt">Roboto</h3></br>
+                                     ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
+                                     abcdefghijklmnopqrstuvwxyz</br>
+                                     0123456789 (.,;:’”$#@!&*) 
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dalog -->
-    </div>  
-    
-    
-    <div class="modal" id="cb_modal" style="display: none;" aria-hidden="true">
-         <div class="modal-dialog" style="z-index:9999">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Call Back Number</h4>
-                </div>
-                <div class="modal-body">
-                            <ul>
-                            <li><a href="tel: 855-393-3521">&nbsp;&nbsp;855-393-3521</a></li>  
-                            </ul>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-                </div>
-                <!-- /.modal-content -->
-            </div>
-        <!-- /.modal-dalog -->
-    </div>        
+                <!-- /.row -->
 
-    <div class="modal" id="links_modal" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog" style="z-index:9999">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Helpful Links</h4>
             </div>
-            <div class="modal-body">   
-                    <ul>
-                    <b>Resources</b>
-                    <li><a href="http://maps.google.com" title="click to open" target="_blank">&nbsp;&nbsp;Google Maps</a></li>
-					<li><a href="https://www2.charterbusiness.com/partner/tlr" title="click to open" target="_blank">&nbsp;&nbsp;Charter Serviceability</a></li>			
-                    <hr>				    
-                    <b>Partner Portals</b>
-                    <li><a href="http://agent.telarus.com/login.cfm" title="click to open" target="_blank">&nbsp;&nbsp;Telarus</a></li>                   
-                    <li><a href="https://caps.cox.com/" title="click to open" target="_blank">&nbsp;&nbsp;CAPS Cox Portal</a></li>		
-                    <li><a href="https://business-spectrum.force.com/partners/login" title="click to open" target="_blank">&nbsp;&nbsp;Charter Spectrum</a></li>
-                    <li><a href="https://channelpartners.timewarnercable.com/content/channelpartners/login.html?resource=%2Fcontent%2Fchannelpartners%2Fhome.html&$$login$$=%24%24login%24%24" title="click to open" target="_blank">&nbsp;&nbsp;Time Warner Partner Portral</a></li>  
-                    </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dalog -->
-    </div>               
-                   
-            
-    <div class="modal" id="entry_modal" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog" style="z-index:9999">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Order Entry</h4>
-            </div>
-            <div class="modal-body">      
-                        <ul>
-                        <li><a href="tel: 888-362-4802">&nbsp;&nbsp;888-362-4802 - Charter Spectrum St. Louis</a></li>    
-                        </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dalog -->
-    </div>     
-            
-                        
-    <div class="modal" id="service_modal" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog" style="z-index:9999">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Channel Manager(s) / Support</h4>
-            </div>
-            <div class="modal-body">  
-                
-                
-                        <ul><b>ACC Business</b>
-                        <table class="table table-bordered" style="width:90%"> 
-                              <tr>
-                                <td>Pat Lalley</td>
-                                <td><a href="tel: 866-222-2877">866-222-2877</a></td>
-                                <td><a href="mailto: plalley@att.com">plalley@att.com</a></td>
-                              </tr>                                 
-                        </table>                 
-                        </ul>
-                
-                        <ul><b>Charter Spectrum Business</b>
-                        <table class="table table-bordered" style="width:90%"> 
-                              <tr>
-                                <td>Jan Russell</td>
-                                <td><a href="tel: 310-613-5997">310-613-5997</a></td>
-                                <td><a href="mailto: jan.russell@charter.com">jan.russell@charter.com</a></td>
-                              </tr>                                 
-                        </table>                 
-                        </ul>
-                
-                        <ul><b>Comcast Business</b>
-                        <table class="table table-bordered" style="width:90%"> 
-                              <tr>
-                                <td>Kyra Davis</td>
-                                <td>Submit Paperwork to Kyra <a href="mailto: kdavis@telarus.com">kdavis@telarus.com</a></td>
-                              </tr>                                 
-                        </table>                 
-                        </ul>
-                     
-                        <ul><b>Cox Business (CAPS)</b>
-                         <table class="table table-bordered" style="width:90%"> 
-                              <tr>
-                                <td>Bob Stafford</td>
-                                <td><a href="tel: 619-384-1131">Mobile - 619-384-1131</a></br><a href="tel: 619-269-2462">Office - 619-269-2462</a></td>
-                                <td><a href="mailto: bob.stafford@cox.com">bob.stafford@cox.com</a></td>
-                              </tr>                                 
-                        </table> 
-                        </ul>
-        
-                        <ul><b>Telarus</b>
-                          <table class="table table-bordered" style="width:90%"> 
-                              <tr>
-                                <td>Kyra Davis</td>
-                                <td><a href="tel: 385-695-1175">385-695-1175</a></td>
-                                <td><a href="mailto: kdavis@telarus.com">kdavis@telarus.com</a></td>
-                              </tr>
-                              <tr>
-                                <td>Ciera Broberg</td> 
-                                <td><a href="tel: 801-938-3666">801-938-3666</a></td>
-                                <td><a href="mailto: cbroberg@telarus.com">cbroberg@telarus.com</a></td>
-                              </tr>                                          
-                        </table>
-                        </ul>
-        
-                        <ul><b>Telepacific</b>
-                        <table class="table table-bordered" style="width:90%"> 
-                              <tr>
-                                <td>Randy Greene</td>
-                                <td><a href="tel: 805-657-3029">805-657-3029</a></td>
-                                <td><a href="mailto: rgreene@telepacific.com">rgreene@telepacific.com</a></td>
-                              </tr>                                 
-                        </table>                 
-                        </ul>
-        
-                        <ul><b>Time Warner Business: By Territory</b>
-                        <table class="table table-bordered" style="width:90%"> 
-                              <tr>
-                                <td>Kyra Davis</td>
-                                <td><a href="tel: 385-695-1175">385-695-1175</a></td>
-                                <td>Submit Paperwork to Kyra <a href="mailto: kdavis@telarus.com">kdavis@telarus.com</a></td>
-                              </tr>                                 
-                        </table>                 
-                        </ul>
-        
-                        <ul><b>Vonage</b>
-                        <table class="table table-bordered" style="width:90%"> 
-                              <tr>
-                                <td>Lee Lawson</td>
-                                <td><a href="tel: 619-302-3619">619-302-3619</a></td>
-                                <td><a href="mailto: lee.lawson@vonagebusiness.com">lee.lawson@vonagebusiness.com</a></td>
-                              </tr>                                 
-                        </table>                 
-                        </ul> 
-        
+            <!-- /.container-fluid -->
 
-                        	
-            </div>
-            <div class="modal-footer">
-                <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-            </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dalog -->
-    </div>    
-            
-    <div class="modal" id="rep_modal" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog" style="z-index:9999">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Rep ID</h4>
-            </div>
-            <div class="modal-body">            
-                <ul>
-                    <li>&nbsp;&nbsp;Service Radius/Aureus Business sub-agent of Telarus</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dalog -->
-    </div>  
-            
-    <div class="modal" id="rc_modal" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog" style="z-index:9999">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Rate Cards by Provider</h4>
-            </div>
-            <div class="modal-body">                                    
-                <ul>
-                <li><a href="ratecards/ACC Fiber Pricing.pdf" target="_blank">&nbsp;&nbsp;ACC Business Fiber</a></li>                
-                <li><a href="ratecards/Brighthouse Pricing 2015.pdf" target="_blank">&nbsp;&nbsp;Bright House Business</a></li>
-                <li><a href="ratecards/BSN_Satellite_Pricing_Q1_2015.pdf" target="_blank">&nbsp;&nbsp;BroadSky Network Satellite</a></li>
-                <li><a href="ratecards/2015 Spectrum Business Rate Card.pdf" target="_blank">&nbsp;&nbsp;Charter Spectrum Business</a></li>
-                <li><a href="ratecards/Spectrum Business ST LOUIS Rate Card.pdf" target="_blank">&nbsp;&nbsp;Charter Spectrum Business St. Louis</a></li>
-                <li><a href="ratecards/Comcast Business August 2015 Promotions.pdf" target="_blank">&nbsp;&nbsp;Comcast Business</a></li>
-                <li><a href="ratecards/OPTIMUM Pricing Guide 5-1-2015.pdf" target="_blank">&nbsp;&nbsp;Optimum Business</a></li>
-                <li><a href="ratecards/TWCBC Q3 ACQ OFFERS(AllRegions).pdf" target="_blank">&nbsp;&nbsp;Time Warner Cable Business Class</a></li>
-                </br>&nbsp;&nbsp;For other providers: Please contact Kyra from Telarus for quotes and paperwork
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="#" data-dismiss="modal" class="btn">Close</a>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dalog -->
-    </div>  
-            
-     			
-                   
-</div>
-<!-- /.modal -->
-	<!-- script references -->
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery.qtip.min.js"></script>        
-        <script type="text/javascript" src="js/imagesloaded.pkg.min.js"></script>
-        <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow86.js"></script>
-        <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+        <!-- /#page-wrapper -->
 
-	</body>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
