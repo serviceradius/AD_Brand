@@ -11,7 +11,7 @@
 }
 .navbar-inverse .navbar-nav>.active>a{
     color: #fff;
-    background: url(../images/h_bg.jpg) no-repeat center;
+    background-image: url(../images/h_bg.jpg) no-repeat center;
 }
 .navbar-inverse .navbar-nav>a:hover{
     color: #fff;
@@ -39,28 +39,17 @@
     padding-bottom: 40px;
     box-shadow: 0px 5px 10px #111;
 }
-.side-nav>li>a {
-    width: 240px;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #111;
-}
 .side-nav>li>a:hover {
     width: 240px;
     border-top: 1px solid #333;
     border-bottom: 1px solid #111;
-    background-color: #222;
+      background: url(../images/h_bg.jpg) no-repeat center;
 }
 .side-nav>li>a:active {
     width: 240px;
     border-top: 1px solid #333;
     border-bottom: 1px solid #111;
-    background: url(../images/h_bg.jpg) no-repeat center;
-}
-.side-nav li a:focus {
-    width: 240px;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #111;
-    background: url(../images/h_bg.jpg) no-repeat center;
+    background-color: #222;  
 }
 h3{
     font-family:'copperplate_gothicregular';
@@ -100,8 +89,8 @@ h5{
     color:white;
 }
 .col-md-6{
-    margin: 20px auto 30px auto;
-    margin: 20px auto 30px auto;
+    margin: 20px auto 20px auto;
+    margin: 20px auto 20px auto;
     text-align: center;
 }
 .col-md-8{
@@ -110,10 +99,11 @@ h5{
 .panel-default {
     border-color: #666;
     box-shadow: 0px 0px 10px black;
+    margin-top:50px;
 }
 .panel-default>.panel-heading {
     color: #FFF;
-   background-image: linear-gradient(to bottom,#ee1f25,#a71d21);
+    background-image: linear-gradient(to bottom,#ee1f25,#a71d21);
     border-color: #ddd;
 }
 #page-wrapper {
@@ -164,16 +154,15 @@ h5{
 }
 #colorA{
     background-color: #ee1f25;
-    /*background-image: linear-gradient(to bottom,#ee1f25,#a71d21);*/
 }
 #colorB{
     background-color:#a71d21;
 }
 #colorC{
-    background-color:#000;
+    background-color:#333;
 }
 #colorD{
-    background-color:#FFF;
+    background-color:#222;
 }
 .container{
     color:#aaa;
@@ -207,22 +196,35 @@ hr{
     height: 300px;
     background-color: white;
 }
+.box_alt{
+    margin: 5px auto 30px auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
 .box_lg{
     margin: 5px auto 30px auto;
     width: 100%;
     height: 100px;
     background-color: white;
     border-radius: 5px;
+    align-content: center;
+}
+.word{
+   color:black; 
+   padding-top:30px; 
+   font-size:40px; 
+   text-shadow:none;
 }
 .caption{
-  overflow: hidden;
-  max-width: 200px;    
+  max-width: 300px;    
   text-align: left;
   margin: 5px auto 50px auto;
 }
 .caption_alt{
-  overflow: hidden;
-  max-width: 200px;    
+  max-width: 250px;    
   text-align: center;
   margin: 5px auto 50px auto;
 }
