@@ -19,7 +19,7 @@
 }
 .navbar-brand {
     float: left;
-    padding: 5px 15px;
+    padding: 10px 10px;
     font-size: 18px;
     height: 100%;
     width:100%;
@@ -27,7 +27,7 @@
 }
 .side-nav {
     position: fixed;
-    top: 10%;
+    top: 6%;
     left: 240px;
     width: 240px;
     margin-left: -250px;
